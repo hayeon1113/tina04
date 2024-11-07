@@ -49,7 +49,7 @@ html, body {
 .content_wrap h1 {
     font-size: 22px;
     font-weight: bold;
-    color: #DB7093;
+    color: #FFE4E1;
     padding-bottom: 10px;
 }
 
@@ -76,7 +76,7 @@ html, body {
 }
 
 .contact_wrap a.bg1 {
-    background-color: #FFB6C1;
+    background-color: #DB7093;
 }
 
 .contact_wrap a.bg2 {
