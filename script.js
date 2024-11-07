@@ -1,13 +1,13 @@
 // 구글 지도 초기화 함수
 function initMap() {
     var map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 37.378100, lng: 127.112298 }, // 지도 중심 좌표
+        center: { lat: 37.7156502, lng: 126.6978231 }, // 지도 중심 좌표
         zoom: 17
     });
 
     // 마커 추가
     var marker = new google.maps.Marker({
-        position: {lat: 37.378100, lng: 127.112298 }, // 만수옥의 좌표
+        position: {lat: 37.7156502, lng: 126.6978231 }, // 만수옥의 좌표
         map: map,
         title: "만수옥"
     });
