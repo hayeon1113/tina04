@@ -102,7 +102,7 @@ html, body {
 }
 /* 날짜 아이콘 크기 수정 */
 .date_wrap img {
-    height: 3px; /* 아이콘 크기 줄이기 */
+    height: 5px; /* 아이콘 크기 줄이기 */
     vertical-align: middle;
     position: relative;
     top: -5px;
@@ -111,7 +111,7 @@ html, body {
 
 /* 주소 아이콘 크기 수정 */
 .addr_wrap img {
-    height: 3px; /* 아이콘 크기 줄이기 */
+    height: 5px; /* 아이콘 크기 줄이기 */
     vertical-align: middle;
     position: relative;
     top: -5px;
