@@ -103,7 +103,7 @@ html, body {
 
 /* 지도 영역 */
 .map_wrap {
-    height: 300px;
+    height: 200px;
     background-color: #ddd;
     margin-top: 20px;
 }
