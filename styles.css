@@ -4,17 +4,19 @@
     padding: 0;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -moz-tap-highlight-color: rgba(0, 0, 0, 0);
-    -webkit-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%; 
 }
 
 html, body {
     height: 100%;
+    min-height: 100vh; /* 화면 높이를 100%로 설정하고, 화면 길이가 부족할 경우 100vh로 설정 */
 }
 
 /* 기본 배경색 */
 body {
     background-color: #eee;
     overflow-x: hidden; /* 가로 스크롤 막기 */
+    padding-bottom: 30px; /* 페이지 하단 여백 추가 */
 }
 
 /* 전체 랩 스타일 */
@@ -22,7 +24,8 @@ body {
     max-width: 500px;
     margin: 0 auto;
     background-color: #fff;
-    height: auto;
+    height: auto; /* 콘텐츠에 따라 자동으로 높이가 늘어납니다 */
+    padding-bottom: 20px; /* 하단 여백 추가 */
 }
 
 /* 이미지 관련 */
