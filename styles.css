@@ -1,3 +1,4 @@
+/* 기본 스타일 초기화 */
 * {
     margin: 0;
     padding: 0;
@@ -10,10 +11,13 @@ html, body {
     height: 100%;
 }
 
+/* 기본 배경색 */
 body {
     background-color: #eee;
+    overflow-x: hidden; /* 가로 스크롤 막기 */
 }
 
+/* 전체 랩 스타일 */
 #wrap {
     max-width: 500px;
     margin: 0 auto;
@@ -21,18 +25,20 @@ body {
     height: auto;
 }
 
+/* 이미지 관련 */
 .img100 {
     max-width: 100%;
-    width: auto !important;
-    width: 100%;
+    width: 100%; /* !important 제거 */
 }
 
+/* 슬라이더 영역 */
 #autoplay, .slide_wrap {
     position: relative;
     width: 100%;
     overflow: hidden;
 }
 
+/* 콘텐츠 영역 */
 .content_wrap {
     font-size: 14px;
     text-align: center;
@@ -55,6 +61,7 @@ body {
     vertical-align: middle;
 }
 
+/* 연락처 영역 */
 .contact_wrap {
     text-align: center;
     padding-top: 15px;
@@ -91,6 +98,7 @@ body {
     top: -2px;
 }
 
+/* 날짜 영역 */
 .date_wrap {
     margin: 0 15px;
     padding: 20px 0 0 0;
@@ -106,6 +114,7 @@ body {
     padding-right: 5px;
 }
 
+/* 주소 영역 */
 .addr_wrap {
     margin: 0 15px;
     padding: 10px 0;
@@ -121,6 +130,7 @@ body {
     padding-right: 5px;
 }
 
+/* 지도 영역 */
 .map_wrap {
     margin: 0 15px;
     height: 300px;
@@ -129,6 +139,7 @@ body {
     font-size: 14px;
 }
 
+/* 저작권 정보 */
 .copy {
     font-size: 12px;
     color: #888;
@@ -137,9 +148,12 @@ body {
     padding-bottom: 15px;
 }
 
+/* 슬라이더 내비게이션 버튼 숨기기 */
 .slick-prev, .slick-next {
-    display: none !important;
+    display: none;
 }
+
+/* 본문과 관련된 스타일 */
 body {
     background-color: #eee;
     overflow-x: hidden; /* 추가 */
