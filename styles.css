@@ -9,53 +9,48 @@
 
 html, body {
     height: 100%;
-    min-height: 100vh; /* 화면 높이를 100%로 설정하고, 화면 길이가 부족할 경우 100vh로 설정 */
+    min-height: 100vh; /* 화면 높이를 100%로 설정 */
 }
 
-/* 기본 배경색 */
-body {
-    background-color: #eee;
-    overflow-x: hidden; /* 가로 스크롤 막기 */
-    padding-bottom: 30px; /* 페이지 하단 여백 추가 */
-}
-
-/* 전체 랩 스타일 */
-#wrap {
-    max-width: 500px;
-    margin: 0 auto;
-    background-color: #fff;
-    height: auto; /* 콘텐츠에 따라 자동으로 높이가 늘어납니다 */
-    padding-bottom: 20px; /* 하단 여백 추가 */
-}
-
-/* 이미지 관련 */
-.img100 {
-    max-width: 100%;
-    width: 100%; /* !important 제거 */
-}
-
-/* 슬라이더 영역 */
-#autoplay, .slide_wrap {
+/* 배경 이미지 스타일 */
+.background-image {
     position: relative;
     width: 100%;
-    overflow: hidden;
+    height: 100vh;
+    background-image: url('https://github.com/user-attachments/assets/a9bd9547-b137-484d-bfba-88426af5efbc');
+    background-size: cover;
+    background-position: center;
 }
 
-/* 콘텐츠 영역 */
+/* 불투명한 오버레이 */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* 불투명한 검은색 배경 */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 콘텐츠 영역 스타일 */
 .content_wrap {
     font-size: 14px;
     text-align: center;
     padding-top: 15px;
     margin: 0 15px;
-    color: #8d968c;
+    color: #fff; /* 글씨 색상 변경 */
     line-height: 20px;
 }
 
 .content_wrap h1 {
-    font-size: 15px;
+    font-size: 25px;
     font-weight: bold;
-    text-align: center;
-    padding-bottom: 15px;
     color: #50a27f;
 }
 
@@ -72,13 +67,14 @@ body {
 
 .contact_wrap a {
     font-size: 15px;
-    color: #2f302c;
+    color: #fff; /* 글씨 색상 변경 */
     font-weight: bold;
     text-decoration: none;
     display: inline-block;
     padding: 10px;
     min-width: 40px;
     border-radius: 5px;
+    margin: 5px;
 }
 
 .contact_wrap a.bg1 {
@@ -101,41 +97,20 @@ body {
     top: -2px;
 }
 
-/* 날짜 영역 */
-.date_wrap {
-    margin: 0 15px;
-    padding: 20px 0 0 0;
-    text-align: left;
-    font-size: 13px;
+/* 날짜, 주소 영역 */
+.date_wrap, .addr_wrap {
+    text-align: center;
+    font-size: 14px;
+    margin: 10px;
 }
 
-.date_wrap img {
-    height: 15px;
-    vertical-align: middle;
-    position: relative;
-    top: -2px;
-    padding-right: 5px;
-}
-
-/* 주소 영역 */
-.addr_wrap {
-    margin: 0 15px;
-    padding: 10px 0;
-    text-align: left;
-    font-size: 13px;
-}
-
-.addr_wrap img {
-    height: 15px;
-    vertical-align: middle;
-    position: relative;
-    top: -2px;
-    padding-right: 5px;
+.date_wrap span, .addr_wrap span {
+    color: #fff;
 }
 
 /* 지도 영역 */
 .map_wrap {
-    margin: 0 15px;
+    margin-top: 20px;
     height: 300px;
     background-color: #ddd;
     text-align: center;
@@ -149,15 +124,4 @@ body {
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
-}
-
-/* 슬라이더 내비게이션 버튼 숨기기 */
-.slick-prev, .slick-next {
-    display: none;
-}
-
-/* 본문과 관련된 스타일 */
-body {
-    background-color: #eee;
-    overflow-x: hidden; /* 추가 */
 }
