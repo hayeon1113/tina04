@@ -12,3 +12,27 @@ function initMap() {
         title: "만수옥"
     });
 }
+$(function(e) {
+		initMap();
+		
+		var targetEle = $("#autoplay");
+		targetEle.find("img").css("cssText" , "width:" + targetEle.width() + "px !important;");
+		targetEle.slick({
+			slidesToShow : 1,
+			slidesToScroll : 1,
+			autoplay : true,
+			autoplaySpeed : 2000,
+			dots: false,
+		  	infinite: true,
+		  	variableWidth: true
+		});
+		targetEle.css({"display" : "block"});
+		var tmpHeight = 0;
+		targetEle.find("img").each(function(k, v) {
+			var _this = $(this);
+			if( tmpHeight == 0 || tmpHeight > _this.height() ) {
+				tmpHeight = _this.height();
+			}
+		});
+		$(".slide_wrap").height(tmpHeight);
+	});
