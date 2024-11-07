@@ -140,3 +140,7 @@ body {
 .slick-prev, .slick-next {
     display: none !important;
 }
+body {
+    background-color: #eee;
+    overflow-x: hidden; /* 추가 */
+}
