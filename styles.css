@@ -100,6 +100,23 @@ html, body {
     color: #fff;
     margin-top: 10px;
 }
+/* 날짜 아이콘 크기 수정 */
+.date_wrap img {
+    height: 12px; /* 아이콘 크기 줄이기 */
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+    padding-right: 5px;
+}
+
+/* 주소 아이콘 크기 수정 */
+.addr_wrap img {
+    height: 12px; /* 아이콘 크기 줄이기 */
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+    padding-right: 5px;
+}
 
 /* 지도 영역 */
 .map_wrap {
