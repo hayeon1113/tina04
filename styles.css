@@ -9,7 +9,7 @@
 
 html, body {
     height: 100%;
-    min-height: 100vh; /* 화면 높이를 100%로 설정 */
+    margin: 0;
 }
 
 /* 배경 이미지 스타일 */
@@ -31,20 +31,17 @@ html, body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4); /* 불투명한 검은색 배경 */
     color: #fff;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    padding: 20px;
 }
 
 /* 콘텐츠 영역 스타일 */
 .content_wrap {
     font-size: 14px;
     text-align: center;
-    padding-top: 15px;
-    margin: 0 15px;
-    color: #fff; /* 글씨 색상 변경 */
+    margin: 0;
     line-height: 20px;
 }
 
