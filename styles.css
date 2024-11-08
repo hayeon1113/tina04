@@ -54,7 +54,7 @@ html, body {
 }
 
 .content_wrap h1 img {
-    height: 25px;
+    height: 30px;
     vertical-align: middle;
 }
 
@@ -129,17 +129,21 @@ icon-phone-hayeon {
     margin-top: 10px;
 }
 
-/* 지도 영역 */
+/* 부모 요소가 화면의 중앙에 위치하도록 설정 */
+body {
+    display: flex;
+    justify-content: center;  /* 가로로 가운데 정렬 */
+    align-items: center;      /* 세로로 가운데 정렬 */
+    height: 100vh;            /* 화면 전체 높이 */
+    margin: 0;                /* body 기본 여백 제거 */
+}
+
+/* 지도 영역 스타일 */
 .map_wrap {
-    width: 50%;
+    width: 100%; 
     height: 300px;
     background-color: #ddd;
     margin-top: 10px;
-    
-    /* 부모 요소를 flex 컨테이너로 설정 */
-    display: flex;
-    justify-content: center;  /* 가로로 가운데 정렬 */
-    align-items: center;  /* 세로로 가운데 정렬 */
 }
 
 
