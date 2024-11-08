@@ -74,7 +74,7 @@ icon-phone-hayeon {
 
 /* 영화 아이콘 스타일 */
 .icon-movie {
-    height: 200px; /* 원하는 크기 */
+    height: 50px; /* 원하는 크기 */
     padding-right: 5px;
     vertical-align: middle;
 }
