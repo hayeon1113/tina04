@@ -139,7 +139,7 @@ html, body {
 
 /* 지도 영역 스타일 */
 .map_wrap {
-    width: 50%;  /* 지도 크기 */
+    width: 80%;  /* 지도 크기 */
     height: 300px;  /* 지도 높이 */
     background-color: #ddd;  /* 기본 배경색 */
     margin-top: 20px;  /* 초대장소 아래에 여백을 추가 */
