@@ -43,7 +43,7 @@ html, body {
 .content_wrap {
     font-size: 18px;
     text-align: center;
-    margin: 10px 0;
+    margin: 10px;
 }
 
 .content_wrap h1 {
@@ -78,32 +78,40 @@ icon-phone-hayeon {
     padding-right: 5px;
     vertical-align: middle;
 }
+.contact_wrap {
+    display: flex;
+    justify-content: center; /* 가로로 가운데 정렬 */
+    align-items: center; /* 세로로 가운데 정렬 */
+    text-align: center; /* 텍스트 정렬 */
+    flex-wrap: wrap; /* 화면 크기에 맞게 요소들이 줄 바꿈되도록 설정 */
+}
+
 .contact_wrap a {
     font-size: 16px;
     color: #fff;
     font-weight: bold;
     text-decoration: none;
     display: inline-block;
-    padding: 8px;
-    margin: 5px;
+    padding: 5px;
+    margin: 3px;
     border-radius: 5px;
 }
 
 .contact_wrap a.bg1 {
     background-color: rgba(255, 182, 193, 0.7); /* 흰색 배경, 50% 투명도 */
-    padding: 15px;  /* 박스 안쪽 여백 */
+    padding: 10px;  /* 박스 안쪽 여백 */
     border-radius: 10px;
 }
 
 .contact_wrap a.bg2 {
     background-color: rgba(219, 112, 147, 0.7); /* 흰색 배경, 50% 투명도 */
-    padding: 15px;  /* 박스 안쪽 여백 */
+    padding: 10px;  /* 박스 안쪽 여백 */
     border-radius: 10px;
 }
 
 .contact_wrap a.bg3 {
     background-color: rgba(255, 192, 203, 0.7); /* 흰색 배경, 50% 투명도 */
-    padding: 15px;  /* 박스 안쪽 여백 */
+    padding: 10px;  /* 박스 안쪽 여백 */
     border-radius: 10px;
 }
 
@@ -119,23 +127,6 @@ icon-phone-hayeon {
     text-align: center;
     color: #fff;
     margin-top: 10px;
-}
-/* 날짜 아이콘 크기 수정 */
-.date_wrap img {
-    height: 30px; /* 아이콘 크기 줄이기 */
-    vertical-align: middle;
-    position: relative;
-    top: -3px;
-    padding-right: 5px;
-}
-
-/* 주소 아이콘 크기 수정 */
-.addr_wrap img {
-    height: 30px; /* 아이콘 크기 줄이기 */
-    vertical-align: middle;
-    position: relative;
-    top: -3px;
-    padding-right: 5px;
 }
 
 /* 지도 영역 */
