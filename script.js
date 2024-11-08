@@ -55,30 +55,37 @@ async function initCustomMap() {
     });
 
     placePicker.addEventListener('gmpx-placechange', () => {
-        const place = placePicker.value;
+    const place = placePicker.value;
 
-        if (!place.location) {
-            window.alert("No details available for input: '" + place.name + "'");
-            infowindow.close();
-            marker.position = null;
-            return;
-        }
+    // 장소 정보가 없으면 경고 메시지를 띄우고, 마커를 지웁니다.
+    if (!place.location) {
+        window.alert("No details available for input: '" + place.name + "'");
+        infowindow.close();
+        marker.setMap(null); // 마커를 지도에서 제거
+        return;
+    }
 
-        if (place.viewport) {
-            map.innerMap.fitBounds(place.viewport);
-        } else {
-            map.center = place.location;
-            map.zoom = 17;
-        }
+    // 장소의 viewport가 있으면 지도 경계에 맞춰줍니다.
+    if (place.viewport) {
+        map.fitBounds(place.viewport);
+    } else {
+        // viewport가 없으면 장소의 위치로 중심을 이동하고 줌 레벨을 설정
+        map.setCenter(place.location);
+        map.setZoom(17);
+    }
 
-        marker.position = place.location;
-        infowindow.setContent(
-            `<strong>${place.displayName}</strong><br>
-             <span>${place.formattedAddress}</span>`
-        );
-        infowindow.open(map.innerMap, marker);
-    });
-}
+    // 마커 위치 설정
+    marker.setPosition(place.location);
+
+    // 정보창에 내용 설정
+    infowindow.setContent(
+        `<strong>${place.displayName}</strong><br>
+         <span>${place.formattedAddress}</span>`
+    );
+
+    // 정보창을 마커와 함께 띄웁니다.
+    infowindow.open(map, marker);
+});
 
 // DOMContentLoaded 시 실행되는 코드
 $(document).ready(function() {
@@ -86,3 +93,4 @@ $(document).ready(function() {
     initSlider();
     initCustomMap();
 });
+}
