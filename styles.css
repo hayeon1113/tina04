@@ -135,7 +135,13 @@ icon-phone-hayeon {
     height: 300px;
     background-color: #ddd;
     margin-top: 10px;
+    
+    /* 부모 요소를 flex 컨테이너로 설정 */
+    display: flex;
+    justify-content: center;  /* 가로로 가운데 정렬 */
+    align-items: center;  /* 세로로 가운데 정렬 */
 }
+
 
 /* 저작권 정보 */
 .copy {
