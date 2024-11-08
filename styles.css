@@ -11,7 +11,6 @@ html, body {
     height: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
-    overflow-x: hidden; /* 가로 스크롤 방지 */
 }
 
 /* 배경 이미지 스타일 */
@@ -34,7 +33,7 @@ html, body {
     height: 100%; /* 화면 꽉 채우기 */
     background-color: rgba(0, 0, 0, 0.5); /* 불투명한 배경 */
     color: #fff;
-    padding: 5vw; /* 화면 비율에 맞게 패딩을 설정 */
+    padding: 20px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -44,20 +43,20 @@ html, body {
 
 /* 콘텐츠 영역 */
 .content_wrap {
-    font-size: 5vw; /* 화면 크기에 맞게 텍스트 크기 조정 */
+    font-size: 16px;
     text-align: center;
-    margin: 2vw; /* 화면 비율에 맞게 여백 설정 */
+    margin: 10px;
 }
 
 .content_wrap h1 {
-    font-size: 5vw; /* 화면 크기에 맞게 제목 크기 조정 */
+    font-size: 20px;
     font-weight: bold;
     color: #FFE4E1;
-    padding-bottom: 2vw;
+    padding-bottom: 10px;
 }
 
 .content_wrap h1 img {
-    height: 5vh; /* 화면 크기에 맞게 이미지 크기 조정 */
+    height: 30px;
     vertical-align: middle;
 }
 
@@ -65,8 +64,8 @@ html, body {
 .icon-phone-hayeon,
 .icon-phone-mom,
 .icon-movie {
-    height: 3vw; /* 아이콘 크기를 화면 비율에 맞게 설정 */
-    padding-right: 1vw;
+    height: 20px;
+    padding-right: 5px;
     vertical-align: middle;
 }
 
@@ -76,47 +75,69 @@ html, body {
     align-items: center; /* 세로로 가운데 정렬 */
     text-align: center; /* 텍스트 정렬 */
     flex-wrap: wrap; /* 화면 크기에 맞게 요소들이 줄 바꿈되도록 설정 */
-    margin-top: 2vw; /* 화면 비율에 맞게 여백 설정 */
+    margin-top: 15px; /* 여백 추가 */
 }
 
 .contact_wrap a {
-    font-size: 3vw; /* 텍스트 크기 조정 */
+    font-size: 14px;
     color: #fff;
     font-weight: bold;
     text-decoration: none;
     display: inline-block;
-    padding: 2vw;
-    margin: 1vw;
+    padding: 8px;
+    margin: 5px;
     border-radius: 5px;
     background-color: rgba(255, 182, 193, 0.7);
 }
 
+.contact_wrap a.bg1 {
+    background-color: rgba(255, 182, 193, 0.7); /* 흰색 배경, 50% 투명도 */
+    padding: 10px;  /* 박스 안쪽 여백 */
+    border-radius: 10px;
+}
+
+.contact_wrap a.bg2 {
+    background-color: rgba(219, 112, 147, 0.7); /* 흰색 배경, 50% 투명도 */
+    padding: 10px;  /* 박스 안쪽 여백 */
+    border-radius: 10px;
+}
+
+.contact_wrap a.bg3 {
+    background-color: rgba(255, 192, 203, 0.7); /* 흰색 배경, 50% 투명도 */
+    padding: 10px;  /* 박스 안쪽 여백 */
+    border-radius: 10px;
+}
+
+/* 날짜 및 주소 아이콘 스타일 */
+.date_wrap, .addr_wrap {
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.date_wrap img, .addr_wrap img {
+    height: 20px; /* 아이콘 크기 줄이기 */
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
 /* 지도 영역 스타일 */
 .map_wrap {
-    width: 80%;
-    height: 40vh; /* 지도 높이 설정 */
-    background-color: #ddd;
-    margin-top: 2vw; /* 화면 비율에 맞게 여백 설정 */
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 8px;
+    width: 100%;  /* 지도 크기 */
+    height: 250px;  /* 지도 높이 */
+    background-color: #ddd;  /* 기본 배경색 */
+    margin-top: 20px;  /* 초대장소 아래에 여백을 추가 */
+    margin-left: auto;  /* 수평 중앙 정렬 */
+    margin-right: auto;  /* 수평 중앙 정렬 */
+    border-radius: 8px;  /* 지도의 모서리를 둥글게 */
 }
 
 /* 저작권 정보 */
 .copy {
-    font-size: 1.5vw; /* 텍스트 크기 조정 */
+    font-size: 12px;
     color: #888;
     text-align: center;
-    padding-top: 2vw;
-    padding-bottom: 2vw;
-}
-
-/* 미디어 쿼리 없이 화면 비율 기반 설정 */
-
-/* 컴퓨터 화면에서도 문제없이 보기 위해 비율 기반 설정 */
-@media screen and (min-width: 768px) {
-    .background-image {
-        background-size: cover; /* 컴퓨터 화면에서 배경 크기 적절하게 맞추기 */
-    }
-}
-
+    padding-top: 10px;
+    padding-bottom: 10px;
+} 
