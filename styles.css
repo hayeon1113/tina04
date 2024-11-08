@@ -10,6 +10,7 @@
 html, body {
     height: 100%;
     margin: 0;
+    font-family: Arial, sans-serif;
 }
 
 /* 배경 이미지 스타일 */
@@ -18,7 +19,7 @@ html, body {
     width: 100%;
     height: 100vh; /* 화면을 꽉 채운 높이 */
     background-image: url('https://github.com/user-attachments/assets/a9bd9547-b137-484d-bfba-88426af5efbc');
-    background-size: cover; /* 화면에 맞게 이미지 크기 조정 */
+    background-size: cover; /* 배경 이미지가 화면을 채우도록 조정, 세로로 꽉 차고 가로로 잘림 */
     background-position: center center; /* 이미지 중앙 정렬 */
     background-repeat: no-repeat; /* 이미지 반복 방지 */
 }
@@ -37,11 +38,12 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 /* 콘텐츠 영역 */
 .content_wrap {
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     margin: 10px;
 }
@@ -59,42 +61,33 @@ html, body {
 }
 
 /* 연락처 영역 */
-icon-phone-hayeon {
-    height: 20px; /* 원하는 크기 */
-    padding-right: 5px; /* 텍스트와의 간격 */
-    vertical-align: middle;
-}
-
-/* 엄마 전화 아이콘 스타일 */
-.icon-phone-mom {
-    height: 20px; /* 원하는 크기 */
-    padding-right: 5px;
-    vertical-align: middle;
-}
-
-/* 영화 아이콘 스타일 */
+.icon-phone-hayeon,
+.icon-phone-mom,
 .icon-movie {
-    height: 50px; /* 원하는 크기 */
+    height: 20px;
     padding-right: 5px;
     vertical-align: middle;
 }
+
 .contact_wrap {
     display: flex;
     justify-content: center; /* 가로로 가운데 정렬 */
     align-items: center; /* 세로로 가운데 정렬 */
     text-align: center; /* 텍스트 정렬 */
     flex-wrap: wrap; /* 화면 크기에 맞게 요소들이 줄 바꿈되도록 설정 */
+    margin-top: 15px; /* 여백 추가 */
 }
 
 .contact_wrap a {
-    font-size: 16px;
+    font-size: 14px;
     color: #fff;
     font-weight: bold;
     text-decoration: none;
     display: inline-block;
-    padding: 5px;
-    margin: 3px;
+    padding: 8px;
+    margin: 5px;
     border-radius: 5px;
+    background-color: rgba(255, 182, 193, 0.7);
 }
 
 .contact_wrap a.bg1 {
@@ -115,38 +108,31 @@ icon-phone-hayeon {
     border-radius: 10px;
 }
 
-.contact_wrap img {
-    height: 15px;
-    padding-right: 5px;
-    vertical-align: middle;
-}
-
-/* 날짜 영역 */
+/* 날짜 및 주소 아이콘 스타일 */
 .date_wrap, .addr_wrap {
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
     color: #fff;
     margin-top: 10px;
 }
 
-/* 기본 설정 */
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%; /* 화면의 너비와 높이를 100%로 설정 */
+.date_wrap img, .addr_wrap img {
+    height: 20px; /* 아이콘 크기 줄이기 */
+    vertical-align: middle;
+    padding-right: 5px;
 }
 
 /* 지도 영역 스타일 */
 .map_wrap {
-    width: 80%;  /* 지도 크기 */
-    height: 300px;  /* 지도 높이 */
+    width: 100%;  /* 지도 크기 */
+    height: 400px;  /* 지도 높이 */
     background-color: #ddd;  /* 기본 배경색 */
     margin-top: 20px;  /* 초대장소 아래에 여백을 추가 */
     margin-left: auto;  /* 수평 중앙 정렬 */
     margin-right: auto;  /* 수평 중앙 정렬 */
-    /* 세로로 화면 가운데 정렬은 하지 않음, 초대장소 아래에만 위치 */
+    border-radius: 8px;  /* 지도의 모서리를 둥글게 */
 }
+
 /* 저작권 정보 */
 .copy {
     font-size: 12px;
