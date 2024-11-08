@@ -44,13 +44,13 @@ html, body {
 
 /* 콘텐츠 영역 */
 .content_wrap {
-    font-size: 3vw; /* 화면 크기에 맞게 텍스트 크기 조정 */
+    font-size: 5vw; /* 화면 크기에 맞게 텍스트 크기 조정 */
     text-align: center;
     margin: 2vw; /* 화면 비율에 맞게 여백 설정 */
 }
 
 .content_wrap h1 {
-    font-size: 3vw; /* 화면 크기에 맞게 제목 크기 조정 */
+    font-size: 5vw; /* 화면 크기에 맞게 제목 크기 조정 */
     font-weight: bold;
     color: #FFE4E1;
     padding-bottom: 2vw;
@@ -65,7 +65,7 @@ html, body {
 .icon-phone-hayeon,
 .icon-phone-mom,
 .icon-movie {
-    height: 1vw; /* 아이콘 크기를 화면 비율에 맞게 설정 */
+    height: 3vw; /* 아이콘 크기를 화면 비율에 맞게 설정 */
     padding-right: 1vw;
     vertical-align: middle;
 }
@@ -80,7 +80,7 @@ html, body {
 }
 
 .contact_wrap a {
-    font-size: 2vw; /* 텍스트 크기 조정 */
+    font-size: 3vw; /* 텍스트 크기 조정 */
     color: #fff;
     font-weight: bold;
     text-decoration: none;
@@ -93,8 +93,8 @@ html, body {
 
 /* 지도 영역 스타일 */
 .map_wrap {
-    width: 50%;
-    height: 30vh; /* 지도 높이 설정 */
+    width: 80%;
+    height: 40vh; /* 지도 높이 설정 */
     background-color: #ddd;
     margin-top: 2vw; /* 화면 비율에 맞게 여백 설정 */
     margin-left: auto;
@@ -104,7 +104,7 @@ html, body {
 
 /* 저작권 정보 */
 .copy {
-    font-size: 1vw; /* 텍스트 크기 조정 */
+    font-size: 1.5vw; /* 텍스트 크기 조정 */
     color: #888;
     text-align: center;
     padding-top: 2vw;
