@@ -59,11 +59,25 @@ html, body {
 }
 
 /* 연락처 영역 */
-.contact_wrap {
-    text-align: center;
-    padding-top: 15px;
+icon-phone-hayeon {
+    height: 20px; /* 원하는 크기 */
+    padding-right: 5px; /* 텍스트와의 간격 */
+    vertical-align: middle;
 }
 
+/* 엄마 전화 아이콘 스타일 */
+.icon-phone-mom {
+    height: 20px; /* 원하는 크기 */
+    padding-right: 5px;
+    vertical-align: middle;
+}
+
+/* 영화 아이콘 스타일 */
+.icon-movie {
+    height: 200px; /* 원하는 크기 */
+    padding-right: 5px;
+    vertical-align: middle;
+}
 .contact_wrap a {
     font-size: 16px;
     color: #fff;
@@ -76,19 +90,19 @@ html, body {
 }
 
 .contact_wrap a.bg1 {
-    background-color: rgba(255, 182, 193, 0.5); /* 흰색 배경, 50% 투명도 */
+    background-color: rgba(255, 182, 193, 0.7); /* 흰색 배경, 50% 투명도 */
     padding: 20px;  /* 박스 안쪽 여백 */
     border-radius: 10px;
 }
 
 .contact_wrap a.bg2 {
-    background-color: rgba(219, 112, 147, 0.5); /* 흰색 배경, 50% 투명도 */
+    background-color: rgba(219, 112, 147, 0.7); /* 흰색 배경, 50% 투명도 */
     padding: 20px;  /* 박스 안쪽 여백 */
     border-radius: 10px;
 }
 
 .contact_wrap a.bg3 {
-     background-color: rgba(255, 192, 203, 0.5); /* 흰색 배경, 50% 투명도 */
+     background-color: rgba(255, 192, 203, 0.7); /* 흰색 배경, 50% 투명도 */
     padding: 20px;  /* 박스 안쪽 여백 */
     border-radius: 10px;
 }
