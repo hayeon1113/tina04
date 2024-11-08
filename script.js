@@ -7,19 +7,16 @@ function initMap() {
 
     // 마커 추가
     var marker = new google.maps.Marker({
-        position: {lat: 37.7156502, lng: 126.6978231 }, // 만수옥의 좌표
+        position: { lat: 37.7156502, lng: 126.6978231 }, // 마커 위치
         map: map,
         title: "만수옥"
     });
 }
 
-// DOMContentLoaded 시 실행되는 코드
-$(document).ready(function() {
-    initMap();
-
-    // 슬라이더 설정
+// 슬라이더 초기화 함수
+function initSlider() {
     var targetEle = $("#autoplay");
-    targetEle.find("img").css("width", targetEle.width());
+    targetEle.find("img").css("width", targetEle.width() + "px");
 
     targetEle.slick({
         slidesToShow: 1,
@@ -31,8 +28,7 @@ $(document).ready(function() {
         variableWidth: true
     });
 
-    // 슬라이더 표시
-    targetEle.css({"display": "block"});
+    targetEle.css("display", "block");
 
     // 슬라이더 높이 설정
     var tmpHeight = 0;
@@ -43,10 +39,10 @@ $(document).ready(function() {
         }
     });
     $(".slide_wrap").height(tmpHeight);
-});
+}
 
-// gmp-map과 관련된 초기화 함수
-async function init() {
+// gmp-map 초기화 함수
+async function initCustomMap() {
     await customElements.whenDefined('gmp-map');
 
     const map = document.querySelector('gmp-map');
@@ -62,9 +58,7 @@ async function init() {
         const place = placePicker.value;
 
         if (!place.location) {
-            window.alert(
-                "No details available for input: '" + place.name + "'"
-            );
+            window.alert("No details available for input: '" + place.name + "'");
             infowindow.close();
             marker.position = null;
             return;
@@ -86,4 +80,9 @@ async function init() {
     });
 }
 
-document.addEventListener('DOMContentLoaded', init);
+// DOMContentLoaded 시 실행되는 코드
+$(document).ready(function() {
+    initMap();
+    initSlider();
+    initCustomMap();
+});
