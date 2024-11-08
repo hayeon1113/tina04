@@ -129,24 +129,24 @@ icon-phone-hayeon {
     margin-top: 10px;
 }
 
-/* 부모 요소가 화면의 중앙에 위치하도록 설정 */
-body {
-    display: flex;
-    justify-content: center;  /* 가로로 가운데 정렬 */
-    align-items: center;      /* 세로로 가운데 정렬 */
-    height: 100vh;            /* 화면 전체 높이 */
-    margin: 0;                /* body 기본 여백 제거 */
+/* 기본 설정 */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%; /* 화면의 너비와 높이를 100%로 설정 */
 }
 
 /* 지도 영역 스타일 */
 .map_wrap {
-    width: 100%; 
-    height: 300px;
-    background-color: #ddd;
-    margin-top: 10px;
+    width: 50%;  /* 지도 크기 */
+    height: 300px;  /* 지도 높이 */
+    background-color: #ddd;  /* 기본 배경색 */
+    margin-top: 20px;  /* 초대장소 아래에 여백을 추가 */
+    margin-left: auto;  /* 수평 중앙 정렬 */
+    margin-right: auto;  /* 수평 중앙 정렬 */
+    /* 세로로 화면 가운데 정렬은 하지 않음, 초대장소 아래에만 위치 */
 }
-
-
 /* 저작권 정보 */
 .copy {
     font-size: 12px;
